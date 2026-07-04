@@ -1,32 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gilded Self</title>
+
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
+
 </head>
+
 <body>
-    <nav>
-        <div class="logoSite">
-            Gilded Self
-        </div>
-        <div class="navLinks">
-            <ul>
-                <li><a href="#">Explore</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">My Style</a></li>
-            </ul>
-        </div>
-    </nav>
+    <header class="nav-bar">
+        <nav>
+            <div class="logo-site">
+                Gilded Self
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#apresentation">Explore</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">My Style</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <div class="banner-container">
         <div class="banner-image">
-            <img src="../src/assets/image.png" alt
+            <img src="../src/assets/image1.png" alt="Banner Image" class="foto-fade">
+            <img src="../src/assets/image2.png" alt="Banner Image 2" class="foto-fade">
         </div>
         <div class="banner-content">
             <h1 class="banner-title">Eu Dourado</h1>
             <p class="banner-subtitle">Conhecendo o que já faz <br> parte de <span class="highlight">você</span></p>
         </div>
     </div>
+    <div class="apresentation">
+        <div class="apresentation-left">
+            <h2 class="apresentation-title">Encontre o nome do que você <span class="highlight-italic">já veste</span>
+            </h2>
+            <div class="apresentation-box">Texto</div>
+        </div>
+        <div class="apresentation-right">
+            <div class="foto-card foto-top">
+                <img src="../src/assets/foto1.png" alt="Estilo 1">
+            </div>
+            <div class="foto-card foto-left">
+                <img src="../src/assets/foto2.png" alt="Estilo 2">
+            </div>
+            <div class="foto-card foto-right">
+                <img src="../src/assets/foto3.png" alt="Estilo 3">
+            </div>
+        </div>
+    </div>
+    <div class="forStart">
+        <div class="forStart-content">
+            <h2 class="forStart-title">Comece a explorar</h2>
+            <p class="forStart-subtitle">Descubra o que você já veste e como expressar seu estilo único.</p>
+            <div class="mapa-mental-container">
+                <canvas id="canvasLinhas">
+
+                </canvas>
+                <div id="nosContainer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="category">
+        <div class="category-title">
+            <h2>Explore por Categoria</h2>
+        </div>
+        <div class="category-text">
+            <p>Descubra estilos e tendências que se alinham com sua personalidade. 
+                Explore nossas categorias e encontreinspiração para expressar seu 
+                estilo único.</p>
+        </div>
+        <div class="category-list">
+            <div id="goth" class="categoria-secao">
+                <h2>Categoria: Goth</h2>
+            </div>
+            <div id="dark-academia" class="categoria-secao">
+                <h2>Categoria: Dark Academia</h2>
+            </div>
+            <div id="social" class="categoria-secao">
+                <h2>Categoria: Dark Academia</h2>
+            </div>
+            <div id="hip-hop" class="categoria-secao">
+                <h2>Categoria: Dark Academia</h2>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-cta">
+            <p>Quer fazer parte da nossa comunidade?</p>
+            <button id="btnParticipar" class="cta-button">Participe do projeto</button>
+        </div>
+        <hr class="footer-divider">
+        <p class="footer-rights">&copy; 2024 Gilded Self. All rights reserved.</p>
+    </footer>
+    <div id="modalLogin" class="modal-overlay">
+        <div class="modal-content">
+            <button id="btnFecharModal" class="modal-close">&times;</button>
+            <h3 class="modal-title">Entrar no Projeto</h3>
+            <form class="modal-form">
+                <div class="input-group">
+                    <label for="login-email">E-mail</label>
+                    <input type="email" id="login-email" required placeholder="seu@email.com">
+                </div>
+                <div class="input-group">
+                    <label for="login-senha">Senha</label>
+                    <input type="password" id="login-senha" required placeholder="••••••••">
+                </div>
+                <button type="submit" class="form-button">Entrar</button>
+            </form>
+            <p class="modal-switch">
+                Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a>
+            </p>
+        </div>
+    </div>
+    <script src="../js/index.js" defer></script>
 </body>
 </html>

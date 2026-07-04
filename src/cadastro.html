@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com"rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+
+<body>
+    <header class="nav-bar">
+        <nav>
+            <div class="logo-site">
+                Gilded Self
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html#apresentation">Explore</a></li>
+                    <li><a href="index.html">Voltar ao Início</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="register-container">
+        <div class="register-card">
+            <h1 class="register-title">Criar Conta</h1>
+            <p class="register-subtitle">Junte-se ao projeto e descubra sua verdadeira expressão.</p>
+            <form class="register-form" action="#" method="POST">
+                <div class="row-inputs">
+                    <div class="input-group">
+                        <label for="reg-nome">Nome</label>
+                        <input type="text" id="reg-nome" required placeholder="Seu nome">
+                    </div>
+                    <div class="input-group">
+                        <label for="reg-username">Usuário</label>
+                        <input type="text" id="reg-username" required placeholder="@usuario">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="reg-email">E-mail</label>
+                    <input type="email" id="reg-email" required placeholder="seu@email.com">
+                </div>
+                <div class="input-group">
+                    <label for="reg-senha">Senha</label>
+                    <input type="password" id="reg-senha" required placeholder="Crie uma senha forte">
+                </div>
+                <button type="submit" class="form-button">Cadastrar</button>
+            </form>
+            <p class="register-switch">
+                Já possui uma conta? <a href="index.html">Entre aqui</a>
+            </p>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer-rights">&copy; 2024 Gilded Self. All rights reserved.</p>
+    </footer>
+</body>
+</html>
